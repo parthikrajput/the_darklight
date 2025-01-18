@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply m-0 p-0 box-border;
+  }
+
+  body {
+    @apply font-jost bg-blue-l-950 text-white text-a;
+  }
+
+  img {
+    @apply object-cover w-full h-auto;
+  }
+
+  a {
+    @apply no-underline;
+  }
+  .btn {
+    @apply border-2 border-solid border-blue-l-600 rounded-tl-xl rounded-br-xl px-7 py-3 text-center flex items-center justify-center text-blue-l-800 text-p;
+  }
+  nav ul li a {
+    @apply text-p tracking-wide;
+  }
+}
