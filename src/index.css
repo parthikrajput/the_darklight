@@ -11,6 +11,10 @@
     @apply font-jost bg-blue-l-950 text-white text-a;
   }
 
+  p {
+    @apply text-p;
+  }
+
   img {
     @apply object-cover w-full h-auto;
   }
@@ -18,10 +22,114 @@
   a {
     @apply no-underline;
   }
+
   .btn {
-    @apply border-2 border-solid border-blue-l-600 rounded-tl-xl rounded-br-xl px-7 py-3 text-center flex items-center justify-center text-blue-l-800 text-p;
+    @apply border-2 border-solid border-blue-l-600 rounded-tl-xl rounded-br-xl px-7 py-3 text-center flex items-center justify-center text-blue-l-800 text-p overflow-hidden hover:bg-blue-l-600 hover:text-white bg-transparent transition-all duration-500 ease-linear w-fit;
   }
+
   nav ul li a {
-    @apply text-p tracking-wide;
+    @apply text-p tracking-wide text-black-l-600 hover:text-blue-l-800 transition-all duration-500 ease-linear font-semibold;
+  }
+
+  h1 {
+    @apply text-h1;
+  }
+
+  h2 {
+    @apply text-h2;
+  }
+
+  h3 {
+    @apply text-h3;
+  }
+
+  h4 {
+    @apply text-h4;
+  }
+
+  h5 {
+    @apply text-h5;
+  }
+
+  h6 {
+    @apply text-h6;
+  }
+
+  nav ul.nav-links li a {
+    @apply flex items-center gap-2;
+  }
+
+  nav ul.nav-links li {
+    @apply relative;
+  }
+
+  .scrollbar-custom {
+    @apply bg-transparent;
+  }
+
+  .scrollbar-custom::-webkit-scrollbar,
+  .phone-number .react-tel-input .country-list::-webkit-scrollbar {
+    @apply w-2 h-1;
+  }
+
+  .scrollbar-custom::-webkit-scrollbar-thumb,
+  .phone-number .react-tel-input .country-list::-webkit-scrollbar-thumb {
+    @apply rounded-md bg-blue-l-500;
+  }
+
+  .scrollbar-custom::-webkit-scrollbar-track,
+  .phone-number .react-tel-input .country-list::-webkit-scrollbar-track {
+    @apply bg-transparent;
+  }
+
+  .review-slider .swiper-button-prev:after,
+  .review-slider .swiper-button-next:after {
+    @apply !text-p text-blue-l-700 bg-white w-10 h-10 rounded-full flex-none md:flex items-center justify-center hidden;
+  }
+
+  .review-slider .swiper-pagination {
+    @apply !-bottom-[5px] md:hidden;
+  }
+
+  .review-slider .swiper-pagination-bullet-active {
+    @apply bg-blue-l-700;
+  }
+
+  .clients-img .swiper-pagination,
+  .clients-img .swiper-button-prev,
+  .clients-img .swiper-button-next {
+    @apply hidden;
+  }
+  .phone-number .react-tel-input .flag-dropdown {
+    @apply !bg-transparent !rounded-none !border-t-0 !border-l-0 !border-r-0 !border-b-2 !border-black-l-200 hover:bg-transparent;
+  }
+  .phone-number .react-tel-input .selected-flag {
+    @apply !px-1 w-[50px] hover:bg-transparent focus:bg-transparent;
+  }
+  .phone-number .react-tel-input .flag-dropdown.open {
+    @apply !bg-transparent;
+  }
+  .phone-number .react-tel-input .flag-dropdown.open .selected-flag {
+    @apply !bg-transparent;
+  }
+  .phone-number .react-tel-input .selected-flag .arrow {
+    @apply left-[27px] border-l-[5px] border-r-[5px] border-t-[7px] -mt-[1px] border-t-black-l-200;
+  }
+  .phone-number .react-tel-input .selected-flag .arrow.up {
+    @apply border-l-[5px] border-r-[5px] border-b-[7px] border-b-black-l-200;
+  }
+  .phone-number .react-tel-input .country-list {
+    @apply w-[210px] bg-blue-l-950 max-h-[300px] text-black-l-200;
+  }
+
+  .phone-number .react-tel-input .country-list .country,
+  .phone-number .react-tel-input .country-list .country.highlight {
+    @apply hover:bg-transparent bg-transparent;
+  }
+  .phone-number .react-tel-input .country-list .country .dial-code {
+    @apply hidden;
+  }
+  .phone-number .react-tel-input .form-control {
+    @apply w-full;
   }
 }
